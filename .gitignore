@@ -1,3 +1,45 @@
-node_modules/
+# --- Operating System Files ---
 .DS_Store
+Thumbs.db
+Desktop.ini
+._*
+
+# --- IDE & Editor Settings ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# --- Dependencies (If you add npm later) ---
+node_modules/
+package-lock.json
+yarn.lock
+
+# --- Logs & Debugging ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 *.log
+
+# --- Build Outputs (If you compile later) ---
+dist/
+build/
+coverage/
+
+# --- Environment Variables (Security) ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- Local Testing Files ---
+# Ignore random test images you might drag into the folder
+test_images/
+*.jpg
+*.jpeg
+*.png
+!assets/*.png  # Keep images if they are part of the UI design
+!favicon.ico
